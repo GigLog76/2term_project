@@ -107,11 +107,6 @@ void loop() {
           state = 3;
           break;
         case 3:
-         /* if (inputBuffer.length() != pinLength) {
-            u8x8.drawString(0, 6, "WRONG LENGTH");
-            inputBuffer = "";
-            return;
-          }*/
           if (inputBuffer == pinCode) {
             u8x8.clearDisplay();
             u8x8.drawString(0, 2, "* WELCOME BACK *");
